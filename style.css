@@ -57,6 +57,11 @@ nav {
   text-decoration: none;
 }
 
+.vr {
+  border-right: 1px solid black;
+  height: 50vh;
+}
+
 .nav-pane p {
   letter-spacing: 3px;
 }
@@ -67,7 +72,7 @@ nav {
 }
 
 .nav-pane a:hover {
-  border: 1px solid white;
+  outline: 1px solid white;
 }
 
 .content-container {
@@ -103,4 +108,17 @@ footer {
   width: 25%;
   display: flex;
   justify-content: space-between;
+}
+
+.social-media--links a {
+  text-decoration: none;
+  color: white;
+}
+
+.social-media--links a:hover {
+  color: blue;
+}
+
+.social-media--links a:active {
+  color: navy;
 }
