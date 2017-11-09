@@ -34,7 +34,6 @@ main {
   align-items: center;
   display: flex;
   background-color: blue;
-  height: 10vh;
   width: 100%;
 }
 
@@ -71,9 +70,28 @@ nav {
   border: 1px solid white;
 }
 
-.body-content {
-  padding: 2rem;
-  text-align: center;
+.content-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  height: 70vh;
+}
+
+.body-summary {
+  width: 25%;
+}
+
+.body-details {
+  width: 75%;
+}
+
+.body-summary, .body-details {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  padding: 1rem 2rem;
+  height: 50vh;
 }
 
 footer {
