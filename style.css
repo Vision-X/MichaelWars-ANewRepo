@@ -30,7 +30,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  flex: 0 0 auto;
+  z-index: 2;
 }
 
 main {
@@ -41,9 +41,12 @@ main {
   align-items: center;
   display: flex;
   background-color: blue;
+  opacity: 0.9;
   position: fixed;
   top: 10vh;
   width: 100%;
+  z-index: 2;
+  box-shadow: 10px 10px 40px black;
 }
 
 nav {
@@ -80,11 +83,9 @@ nav {
 }
 
 .content-container {
-  align-items: center;
   display: flex;
   justify-content: space-around;
   padding: 2rem;
-  /*position: relative;*/
   margin-top: 20vh;
   flex: 1 0 auto;
   /*min-height: 100%;*/
@@ -95,6 +96,7 @@ nav {
 
 .background-image {
   background-image: url('assets/hd-wallpapers-oak-wood-grain-pattern-1920x1200-wallpaper.jpg');
+  /*background-image: url('assets/Dark-Elm.jpg');*/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -111,12 +113,12 @@ nav {
 }
 
 .body-summary {
-  width: 25%;
+  width: 30%;
   border-right: 1px solid black;
 }
 
 .body-details {
-  width: 75%;
+  width: 70%;
 }
 
 .body-summary, .body-details {
@@ -128,14 +130,13 @@ nav {
   z-index: 1;
 }
 
-.body-summary h2 {
+/*.body-summary h2 {
   align-self: center;
-}
+}*/
 
 .image-box {
   align-items: center;
   display: flex;
-  justify-content: center;
 }
 
 .headshot {
@@ -150,14 +151,15 @@ footer {
 }
 
 .social-media--links {
-  width: 25%;
   display: flex;
   justify-content: space-between;
+  width: 25%;
 }
 
 .social-media--links a {
   text-decoration: none;
   color: white;
+  display: block;
 }
 
 .social-media--links a:hover {
@@ -166,4 +168,15 @@ footer {
 
 .social-media--links a:active {
   color: navy;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  max-width: 32px;
+  align-self: center;
+  padding-bottom: .2rem;
 }
