@@ -1,5 +1,5 @@
 :root {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 * {
@@ -12,7 +12,7 @@ body {
   justify-content: space-between;
   background-color: gray;
   font-family: sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -30,10 +30,11 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  flex: 0 0 auto;
 }
 
 main {
-  height: 80vh;
+  height: 100%;
 }
 
 .nav-pane {
@@ -65,11 +66,6 @@ nav {
   text-decoration: none;
 }
 
-.vr {
-  border-right: 1px solid black;
-  height: 50vh;
-}
-
 .nav-pane p {
   letter-spacing: 3px;
 }
@@ -87,14 +83,36 @@ nav {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  padding: 1rem 2rem;
-  position: relative;
-  top: 20vh;
+  padding: 2rem;
+  /*position: relative;*/
+  margin-top: 20vh;
+  flex: 1 0 auto;
   /*min-height: 100%;*/
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.background-image {
+  background-image: url('assets/hd-wallpapers-oak-wood-grain-pattern-1920x1200-wallpaper.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  opacity: 0.6;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .body-summary {
   width: 25%;
+  border-right: 1px solid black;
 }
 
 .body-details {
@@ -104,14 +122,31 @@ nav {
 .body-summary, .body-details {
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
   padding: 1rem 2rem;
-  height: 50vh;
+  /*height: 50vh;*/
+  height: 100%;
+  z-index: 1;
+}
+
+.body-summary h2 {
+  align-self: center;
+}
+
+.image-box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.headshot {
+  max-height: auto;
+  max-width: 50%;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
+  flex: 2 0 auto;
 }
 
 .social-media--links {
