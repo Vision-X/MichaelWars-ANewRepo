@@ -21,57 +21,50 @@ header, footer {
   display: flex;
   background-color: black;
   color: white;
-  height: 10vh;
-  /*padding: 0 2rem;*/
-  padding: 0 12.5%;
+  padding: 0 2rem;
 }
 
 header {
+  height: 10vh;
   justify-content: center;
   position: fixed;
   top: 0;
-  width: 75%;
+  width: 100%;
   z-index: 2;
 }
 
-
-/* ----DOES THIS DO ANYTHING??????---- */
-
-/*main {
-  max-height: 100%;
-}*/
+main {
+  height: 100%;
+}
 
 .nav-pane {
-  background-color: black;
-  /*background-color: gray;*/
+  align-items: center;
   display: flex;
-  justify-content: center;
-  box-shadow: 10px 10px 40px black;
-  /*opacity: 0.9;*/
+  background-color: blue;
+  opacity: 0.9;
   position: fixed;
   top: 10vh;
   width: 100%;
   z-index: 2;
+  box-shadow: 10px 10px 40px black;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 75%;
+  width: 100%;
 }
 
 .nav-pane a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 5vh;
+  height: 10vh;
   width: 25%;
-  background-color: blue;
   border-right: 1px solid white;
   color: white;
   font-variant: small-caps;
-  opacity: 0.9;
   text-align: center;
   text-decoration: none;
 }
@@ -80,26 +73,14 @@ nav {
   letter-spacing: 3px;
 }
 
-.nav-pane a:first-of-type {
+.nav-pane a:nth-of-type(2){
   background-color: navy;
-  border-left: 1px solid white;
   font-style: italic;
 }
 
 .nav-pane a:hover {
   outline: 1px solid white;
-  /*border-right: none;*/
-}
-
-.content-container {
-  display: flex;
-  justify-content: space-around;
-  padding: 2rem 12.5%;
-  margin-top: 15vh;
-  flex: 1 0 auto;
-  min-height: 66vh;
-  position: relative;
-  z-index: 1;
+  border-right: none;
 }
 
 .background-image {
@@ -107,7 +88,7 @@ nav {
   background-image: url('assets/brushed-aluminum.jpg');
   background-position: center;
   background-size: cover;
-  /*background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   background-attachment: scroll;
   opacity: 0.6;
   position: absolute;
@@ -116,44 +97,15 @@ nav {
   bottom: 0;
   left: 0;
   right: 0;
-  /*height: 100%;*/
-  width: 100%;
-}
-
-.body-summary {
-  /*height: 100%;*/
-  width: 30%;
-  border-right: 1px solid black;
-}
-
-.body-details {
-  /*height: 100%;*/
-  width: 70%;
-}
-
-.body-summary, .body-details {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 2rem;
-  /*height: 50vh;*/
   height: 100%;
-  z-index: 1;
-}
-
-.image-box {
-  align-items: center;
-  display: flex;
-}
-
-.headshot {
-  max-height: auto;
-  max-width: 50%;
+  width: 100%;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
   flex: 2 0 auto;
+  z-index: 2;
   max-height: 10vh;
 }
 
@@ -186,4 +138,32 @@ footer {
   max-width: 32px;
   align-self: center;
   padding-bottom: .2rem;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  margin-top: 20vh;
+  flex: 1 0 auto;
+  /*min-height: 100%;*/
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.body-summary, .body-details {
+  height: 58vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+.content-container h1, h2, h3, p, img {
+  padding: .5rem 0;
+}
+
+ol {
+  margin: 0;
 }
