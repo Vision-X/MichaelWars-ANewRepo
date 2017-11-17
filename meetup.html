@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="learning.css">
+  <title>Meetups</title>
+</head>
+<body>
+
+    <header>
+      <h1>marlow!</h1>
+    </header>
+
+    <main>
+      <section>
+        <article class="nav-pane">
+          <nav>
+            <a href="index.html"><p>about</p></a>
+            <a href="learning.html"><p>learning</p></a>
+            <a href="goals.html"><p>goals</p></a>
+            <a href="#"><p>meetups</p></a>
+          </nav>
+        </article>
+
+      </section>
+
+      <section class="content-container">
+        <article class="body-summary">
+          <nav class="post-nav">
+            <a href="#">10/24/2017</a>
+            <a href="#">10/25/2017</a>
+            <a href="#">11/14/2017</a>
+          </nav>
+        </article>
+
+      <section class="content-column">
+        <article class="meetup-details">
+          <pre>Meetup: Monthly DenverScript Meetup
+
+Date: 10/24/2017
+
+Location: CodeTalent
+
+
+
+Topics:
+
+JS and CSS Variables - Mike Fraizer (software dev at ClickFox)
+
+Chrome DevTools 201 - Guillermo Moratorio (Volt, out of FL)
+
+Announced Jobs: Andy & Corrine... Hiring for React .... .NET stack --- full stack position JS and Angular
+
+Spoke to...
+
+James, Turing Grad, worked on an iClicker replacement for college in-class quizzing. Open source, free, and works well. Just requires sharing a link.
+
+Guillermo, Galvanize grad, works for Volt. Emphasized how important it is to show up to meetups and events to get your face out there
+and how this can get the attention of attending employers and translate to potential job opportunities. Make a point to meet one new person at every one you attend.
+
+Ike, Galvanize grad. Dylan, Galvanize grad.
+
+[g70] attendees: BJ, Brian N, Michael, Kevin, Carolyn, Bryan, Ben, James ... ? ...
+
+CSS Variables:
+
+Custom properties aka Variables -already exist in preprocessors like SASS, Less, Stylus) -mostly supported already
+
+how variables work... -assign with :root { --variableName: value; }
+
+.myClass { color: var(--variableName); backgroundcolor: rgb(var(--differentName),0,0) height: calc(var(--differentName) * 1px); box-shadow: var(--somethingElse);
+
+window.getComputedStyle(el, null).getPropertyValue("--variable").trim(); document.documentElement.style.setProperty(--value`
+
+Why use CSS Variables?
+
+-no need for a preprocessor like SASS -variables are static -variables cascade -browser repaints when the value changes -can be manipulated with JS!
+
+Chrome Dev Tools 201
+
+(Chrome 60 release - 61 is the most recent) Covering -Autocomplete with array access -enhanced console code -node debugger -step into -conditional breakpoints -advanced tricks
+
+Notes:
+
+Object dot notation normally: docuemnt.head.childNodes[0] <-- now autocompletes dot notation
+
+Array autocompletion for bracket notation
+
+classes[key]
+Writing functions in console.. -now auto indents and goes to the next line for you!
+
+Refactoring code in the console.. -cmd+d allows refactoring on the fly
+
+Node Debugger.. -node --instpect-brk async.js
+
+-allows you to debug in chrome and stops at first point to allow custom breakpoints
+
+-provides you a link and you can drop it in chrome and debug... OR -use the dev tools open when you run the command... and it loads your code into the console/debugger in chrome
+
+-step into... jump around and stop code execution (hold CMD to highlight to jump to for break points)
+
+-green highlights are async locations to jump to
+
+-Condtional breakpoints... ->Pause on caught exceptions - stops at a spot before the error is thrown
+
+-More conditional breakpoints... ->Right click on the spot you want, you can add a conditional break point
+
+-More more on conditional breakpoints... ->add on the fly stiff to trace through your code in ways to help debugging
+
+http://davidwalsh.name/debugging-conditional-breakpoints</pre>
+
+        </article>
+        <article class="meetup-details">
+          <pre>Michael Marlow
+
+10/25/17
+
+Meetup: EmberJS
+
+People I have met...
+
+Olivier - His first meetup in Denver, from France. Works for a video encoding software company that provides encoding services for major cable comapnies (its called Ateme)
+
+Job Opportunities: Ibotta is hiring a shit ton of positions, Jr dev and beyond
+
+News in ember
+
+Skeleton UI - a primer to show a placeholder skeleton while the remaining assets and info load (better than a spinner for loading)
+
+API docs!
+
+LTS (long term support, upgrades twice a year, more secure)
+
+Glimmer - rendering layer of ember - building a new tool to allow compiling your templates to binary... the browser can handle and load the rest. It runs faster and templates are smaller.
+
+Ember 3.0 is coming soon.
+
+Speaker: Megan Cooney - Platform engineer at Ibotta
+
+Topic: GraphQL & Ember
+
+What? ITs a query language for you API GraphQL lets to replace multiple REST requests with a SINGLE CALL to fetch the date you specify
+
+Ex... Might take multiple calls to get what you need.
+
+Why? Facebook mobile app wanted specific information to stop using mobile we b views for almost everything Was looking for something different, which is where graphQl comes in.
+
+Github has similar reasons, JSON api calls to get the needed info was wayyyy to frequent or contained extra info with every call that you didnt need
+
+How to setup GraphQL
+
+Schema : -define object types -can be queried -can be deprecated
+
+Resolvers : -How you query actually returns data (or use Graphcool to get up and running with just your schema!)
+
+Two big concepts... Query
+
+request the object and the fields
+can pass arguments to the query, i.e. pagination, number requested
+can get back type info via __typename
+Mutation
+
+pass variables and return an object
+Authenteication -GraphQL is not opinionated
+
+Authentication could be done through...
+Advantages of GraphQL... -determine if query is valid via types -A grand buffet of data (this can be a disadvantage as well)
+
+GraphQL Client Advantages... -Apollo Client --Big advantage is caching --Subscriptions --Can mock things easily
+
+-Relay --Supported by Facebook --Built for Facebook's needs
+
+GraphQL at Ibotta -Splitting the rails Monlith -Able to query for user-specific content -Moving API interactions for the app to nodeJS GraphQL server -Ibotta's ember website uses the old Rails API
+
+Other Factors... -Only want to make changes to data consumptipn, not the UI -Only wanted to affect certina endpoints
+
+Success measures? -Delete a ton of code -no loss of functionality -Make showing offers on the web a less confusing process
+
+Ember Addons... -Ember Apollo clients -Ember GraphQL adapter</pre>
+
+        </article>
+
+        <article class="meetup-details">
+          <pre>Meetup: Denver Develop Happy Hour
+
+Date: 11/14/2017
+
+Location: Tap XIV
+
+People I Met
+
+Eric: Currently a C# dominant dev who had a full-stack background. Took on C# as part of his role at his company. Gave me some really great insight in HR processes in larger companies. Some of his advice included...
+
+DONT apply for your dream job first why: If you aren't qualified enough yet... you can run into snags with how much of their resources they have to use on just getting you through an interview process. He mentioned there are friends of his who tried this path and, after rejection and months (or a year) later on re-apply they discovered these larger companies did not want to waste MORE of their resources on you a second time around.
+advice: Really research what job you'd want there, what the stack looks like, and start to really mirror what that is. Also, reach out to current epmloyees, pick their brain as much as they will allow, and really just prepare yourself for a solid effort once you're ready to enter the application process. In the meantime, he suggested landing a first dev gig NOT with your dream job and gain some value, experience, and leverage that when you believe you are truly ready to chase down that dream job.
+Alex: Works with an obscure stack, Scala was the only thing I recognized.
+
+We talked a lot about the scene in Denver as he JUST moved here a week ago. While talking about what Galvanize prepares us for, especially in project workflow and team based projects, is that at his company they have an onboarding process for new grads (tradition 4-year CSCI undergrads) where they invest a lot of money and effort to get them up to speed on... project workflow and team based projects! This was REALLY encouraging for me because it told me the skills we are gaining here in a replicated work environment will ultimately allow us to hit the ground running much faster than maybe traditional CSCI grads would, potentially giving us an edge in some corporate hiring processes.
+What I Learned
+
+Devs here in Denver are really quite interested in giving guidance/advice to us fledgling devs. Their insight into the industry was extremely valuable to me and I gleaned a lot of information from these conversations that I may have otherwise had to learn the hard way.
+
+Questions I Have
+
+Who else could speak on some of the things Eric spoke of, and if they can confirm or deny this type of loop-back application process is common enough so, upon beginning the job search, I can employ some calculated choices to craft my direction.
+
+What do some large company onboarding processes look/feel like for a jr developer?
+
+What other real-world developer workflow tools or skills could I be adopting early to be more hireable?
+
+Final Reflections
+
+These meetups are really starting to give me a better picture of the developer community here in Denver. It has been really cool to encounter so many excited individuals that are willing to share their perspective and experiences in a way that I had not anticipated.</pre>
+        </article>
+    </section>
+  </section>
+
+</body>
+</html>
