@@ -44,7 +44,7 @@ header {
   top: 10vh;
   width: 100%;
   z-index: 2;
-  background-color: black;
+  /*background-color: black;*/
   box-shadow: 10px 10px 40px black;
 }
 
@@ -61,8 +61,8 @@ nav {
   align-items: center;
   height: 5vh;
   width: 25%;
-  background-color: blue;
-  border-right: 1px solid white;
+  background-color: gray;
+  /*border-right: 1px solid white;*/
   color: white;
   font-variant: small-caps;
   opacity: 0.9;
