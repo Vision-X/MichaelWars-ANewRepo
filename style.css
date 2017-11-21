@@ -64,7 +64,7 @@ body {
 }
 
 .location-icon {
-  background-image: url('/icons/pin-8-24.png');
+  background-image: url('icons/pin-8-24.png');
   background-repeat: no-repeat;
   width: 22px;
   max-height: 32px;
@@ -82,7 +82,8 @@ body {
 
 .site-nav {
   height: 80%;
-  width: 100%;
+  min-width: 40%;
+  padding: 0 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,17 +113,21 @@ summary {
   box-shadow: 10px 10px 5px gray;
   border-radius: 20px;
   font-family: 'Raleway', sans-serif;
-  padding: 1rem 2rem;
-  margin: 0 20%;
+  padding: 2rem 2rem;
+  margin: 0 10%;
   max-height: 70%;
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 details[open] summary {
-  text-align:center;
+  /*padding-left: 50%;*/
+}
+
+details[open] summary h2 {
+  /*outline: 1px solid white;*/
 }
 
 .headshot {
@@ -194,7 +199,7 @@ footer {
 }
 
 .location-icon {
-  background-image: url('/icons/pin-8-16.png')
+  background-image: url('icons/pin-8-16.png')
 }
 
 }
