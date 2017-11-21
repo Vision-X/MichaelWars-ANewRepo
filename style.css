@@ -124,6 +124,8 @@ summary {
 
 details[open] summary {
   /*padding-left: 50%;*/
+  position: absolute;
+  top: 18%;
 }
 
 details[open] summary h2 {
