@@ -1,0 +1,183 @@
+:root {
+  font-size: 1rem;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: gray;
+  font-family: sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+header, footer {
+  align-items: center;
+  display: flex;
+  background-color: skyblue;
+  color: white;
+  height: 10vh;
+  /*padding: 0 2rem;*/
+  padding: 0 12.5%;
+}
+
+header {
+  justify-content: center;
+  /*position: fixed;*/
+  top: 0;
+  width: 75%;
+  z-index: 2;
+}
+
+
+/* ----DOES THIS DO ANYTHING??????---- */
+
+/*main {
+  max-height: 100%;
+}*/
+
+.nav-pane {
+  display: flex;
+  justify-content: center;
+  /*position: fixed;*/
+  top: 10vh;
+  width: 100%;
+  z-index: 2;
+  /*background-color: black;*/
+  box-shadow: 10px 10px 40px black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+}
+
+.nav-pane a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
+  width: 25%;
+  color: white;
+  font-variant: small-caps;
+  opacity: 0.9;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-pane p {
+  letter-spacing: 3px;
+}
+
+.nav-pane a:first-of-type {
+  background-color: navy;
+  font-style: italic;
+}
+
+.nav-pane a:hover {
+  outline: 1px solid white;
+  /*border-right: none;*/
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 12.5%;
+  margin-top: 15vh;
+  flex: 1 0 auto;
+  min-height: 66vh;
+  position: relative;
+  z-index: 1;
+}
+
+/*.background-image {
+  background-image: url('assets/brushed-aluminum.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  opacity: 0.6;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}*/
+
+.body-summary {
+  /*height: 100%;*/
+  width: 30%;
+  border-right: 1px solid black;
+}
+
+.body-details {
+  /*height: 100%;*/
+  width: 70%;
+}
+
+.body-summary, .body-details {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  /*height: 50vh;*/
+  height: 100%;
+  z-index: 1;
+}
+
+.image-box {
+  align-items: center;
+  display: flex;
+}
+
+.headshot {
+  max-height: auto;
+  max-width: 50%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex: 2 0 auto;
+  max-height: 10vh;
+}
+
+.social-media--links {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.social-media--links a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.social-media--links a:hover {
+  color: blue;
+}
+
+.social-media--links a:active {
+  color: navy;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  max-width: 32px;
+  align-self: center;
+  padding-bottom: .2rem;
+}
