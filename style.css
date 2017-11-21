@@ -194,6 +194,7 @@ details[open] summary h2 {
 .blog-nav a {
   padding: 1rem;
   width: 100%;
+  text-decoration: none;
 }
 
 footer {
