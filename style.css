@@ -103,6 +103,10 @@ summary {
   outline: 0;
 }
 
+.info-block {
+  padding-top: 5%;
+}
+
 .info-block,
 .projects-block,
 .blog-block {
@@ -111,6 +115,7 @@ summary {
   justify-content: flex-start;
   width: 60%;
   padding-left: 40%;
+  padding-bottom: 5%;
 }
 
 .icon-container {
