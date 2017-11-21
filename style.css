@@ -239,6 +239,7 @@ footer {
   height: 70%;
 }
 
+
 .location-icon {
   background-image: url('icons/pin-8-16.png')
 }
@@ -246,8 +247,21 @@ footer {
 }
 
 @media screen and (max-width: 600px),
-       screen and (max-height: 700px) {
+       screen and (max-height: 600px) {
   :root {
     font-size: .5rem;
   }
+
+  .info-container {
+    flex-direction: column;
+  }
+
+  .expanded-info-container {
+    border-left: none;
+  }
+
+  .expanded-info-container p {
+    margin: .5rem 1.5rem;
+  }
+
 }
