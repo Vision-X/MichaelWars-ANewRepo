@@ -77,16 +77,18 @@ body {
   justify-content: center;
   align-items: center;
   height: 75%;
+  width: 100%;
   background: radial-gradient(ellipse at center, rgba(169,228,247,1) 0%,rgba(15,181,231,1) 100%);
 }
 
 .site-nav {
   height: 80%;
+  max-height: 80%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .nav-details-container {
@@ -104,7 +106,36 @@ summary {
 .info-block,
 .projects-block,
 .blog-block {
-  line-height: 2;
+  /*line-height: 2;*/
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+  padding-left: 40%;
+}
+
+.icon-container {
+  margin-right: 1rem;
+}
+
+.info {
+  background-image: url('/Users/Next2Last/Desktop/GALVANIZE/Projects/Q1P1/icons/svg/001-computer-3.svg');
+  background-repeat: no-repeat;
+  max-height: 4rem;
+  width: 10%;
+}
+
+.projects {
+  background-image: url('/Users/Next2Last/Desktop/GALVANIZE/Projects/Q1P1/icons/svg/003-internet.svg');
+  background-repeat: no-repeat;
+  /*max-height: 4rem;*/
+  width: 10%;
+}
+
+.blog {
+  background-image: url('/Users/Next2Last/Desktop/GALVANIZE/Projects/Q1P1/icons/svg/004-computer-2.svg');
+  background-repeat: no-repeat;
+  /*max-height: 4rem;*/
+  width: 10%;
 }
 
 .info-container {
