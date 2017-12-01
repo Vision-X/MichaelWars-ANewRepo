@@ -172,9 +172,9 @@ details[open] * {
   border: 1px solid black;
   float: left;
   /*border-radius: 20px;*/
-  max-height: 40vh;
+  /*max-height: 40vh;*/
   padding: 1rem;
-  width: 100%;
+  width: 70%;
 }
 
 .expanded-info-container {
@@ -224,13 +224,16 @@ details[open] * {
 }
 
 footer {
+  background-color: black;
+  color: white;
   border-top: 1px solid gray;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding-right: 3rem;
   padding-top: 1rem;
-  max-height: 5%;
+  /*max-height: 5%;*/
+  height: 4rem;
 }
 
 
@@ -280,7 +283,8 @@ footer {
   padding: 1rem 0;
 }
 
-.blog-body ul {
+.blog-body ul,
+.blog-body ol {
   margin-left: 1rem;
 }
 
@@ -331,8 +335,8 @@ footer {
 
 .headshot {
   /*border-radius: 20px;*/
-  max-height: 60%;
-  width: 80%;
+  max-height: 40%;
+  width: 60%;
 }
 
 
@@ -372,7 +376,7 @@ footer {
     max-height: 40vh;
     display: flex;
     justify-content: center;
-    max-width: 60%;
+    width: 60%;
   }
 
   .headshot {
